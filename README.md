@@ -1,4 +1,4 @@
-# atividades-bonus-extras-md
+# Atividades bônus extras: Modelagem de Domínio.
 
 Repositorio para organizar as atividades bonus extras da disciplina de Modelagem de Dominio.
 
