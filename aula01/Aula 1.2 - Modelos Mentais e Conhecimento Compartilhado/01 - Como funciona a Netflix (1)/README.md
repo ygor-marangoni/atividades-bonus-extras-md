@@ -20,4 +20,7 @@ Assim, de forma geral, a Netflix funciona conectando o usuário a um catálogo d
 
 ## Tente sintetizar e expressar seu entendimento na forma de um modelo em papel.
 
+O diagrama abaixo representa de forma resumida o caminho entre o acesso do usuário, o catálogo, a reprodução do conteúdo e as recomendações.
+
+![Diagrama do funcionamento da Netflix](assets/diagrama-netflix.png)
 
