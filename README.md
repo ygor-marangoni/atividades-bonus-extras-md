@@ -85,10 +85,10 @@ As anotações, respostas, diagramas e códigos ficam nos READMEs de cada ativid
 
 ### Aula 6.1 — pendência de material
 
-As atividades da aula foram registradas em 29/07/2026. Nas quatro atividades iniciadas por “Mais sobre”, não havia enunciado publicado; por isso, os registros foram feitos com essa limitação indicada na tabela.
+As atividades dessa aula não foram anexadas no Teams até o momento da gravação (29/07/2026). Por isso, nas atividades iniciadas por "Mais sobre", não havia enunciado publicado; os registros foram feitos com essa limitação.
 
 ## Apresentação em vídeo
 
-- Link: PREENCHER APÓS A GRAVAÇÃO
-- Duração: PREENCHER
-- Data da gravação: PREENCHER
+- Link: [Link da gravação](https://youtu.be/84r8gNh3eMM)
+- Duração: 14:44min
+- Data da gravação: 29/07/2026
