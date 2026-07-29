@@ -1,8 +1,0 @@
-*.class
-target/
-out/
-build/
-.idea/
-.vscode/
-.DS_Store
-Thumbs.db

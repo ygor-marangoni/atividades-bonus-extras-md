@@ -62,3 +62,22 @@ java -cp $env:TEMP\md-build Main
 - Roteiro: [apresentacao/ROTEIRO_VIDEO.md](apresentacao/ROTEIRO_VIDEO.md)
 
 Os registros são individuais e devem ser revisados pelo estudante antes da entrega final.
+
+## Autoavaliação
+
+| Aula | Registros organizados | Nota da aula | Situação |
+|---|---:|---:|---|
+| Aula 1 | 15 | 3 | Há dois enunciados pendentes da Aula 1.3 e conferência necessária dos conceitos básicos. |
+| Aula 2 | 9 | 4 | Reflexão (2) permanece pendente de enunciado. |
+| Aula 4 | 3 | 5 | Registros organizados. |
+| Aula 5 | 9 | 5 | Registros organizados, incluindo ContextMapper. |
+| Aula 6 | 15 | 5 | Fontes Java foram organizadas nas atividades de implementação. |
+| Aula 7 | 2 | 5 | Registros organizados. |
+
+Os critérios usados são: nota 5 para 100% das atividades da aula registradas; 4 para 80% ou mais; 3 para 50% ou mais; 2 para 30% ou mais; 1 para 10% ou mais; e 0 abaixo disso. Atividades cujo enunciado não foi identificado não são consideradas concluídas.
+
+## Pendências
+
+- Aula 1.3 — Origens e Evolução (1) e (2): enunciados necessários.
+- Aula 2.1 — Reflexão (2): enunciado necessário.
+- A compilação dos exemplos Java depende de um ambiente com JDK (`javac`).
