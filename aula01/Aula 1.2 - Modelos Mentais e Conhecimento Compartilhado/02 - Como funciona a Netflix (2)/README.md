@@ -1,42 +1,24 @@
 # Como funciona a Netflix? (2)
 
-## Identificação
-
-- Aula: 1.2
-- Tema: modelo mental de um serviço de streaming
-- Tipo: representação visual
-
 ## Enunciado
 
-Sintetizar o funcionamento de um serviço de streaming em um modelo que torne explícitos os participantes e o fluxo principal.
+Comparar modelos de funcionamento de uma plataforma de streaming, discutir semelhanças e diferenças e propor uma versão combinada.
 
-## Solução
+## Registro honesto
 
-```mermaid
-flowchart LR
-    P[Pessoa assinante] -->|pesquisa e escolhe| A[Aplicativo]
-    A -->|consulta catálogo| C[Catálogo]
-    A -->|solicita reprodução| G[Gerenciador de sessão]
-    G -->|seleciona qualidade| CDN[Servidor de entrega]
-    CDN -->|segmentos de vídeo| D[Dispositivo]
-    D -->|progresso e preferências| H[Histórico]
-    H --> R[Recomendações]
-    R --> A
-```
+Eu não tenho registro disponível dos modelos elaborados por colegas. Por isso, fiz a análise somente com os exemplos apresentados no material: infográfico institucional, arquitetura de alto nível, modelo de negócio e ecossistema.
 
-## Análise e justificativa
+| Modelo | Ênfase | Limitação |
+|---|---|---|
+| Infográfico | história, serviço e dados gerais | simplifica o funcionamento técnico |
+| Arquitetura | componentes e fluxo de requisições | exige conhecimento técnico |
+| Modelo de negócio | assinatura, conteúdo e receita | não mostra a reprodução de vídeo |
+| Ecossistema | parceiros, concorrentes e infraestrutura | não detalha decisões internas |
 
-O desenho separa catálogo, sessão e entrega de mídia porque essas responsabilidades não são a mesma coisa. A qualidade escolhida depende das condições de rede e o histórico é uma fonte para recomendações, não uma condição para assistir. O modelo é deliberadamente simplificado: não representa contratos de distribuição, cobrança nem moderação de conteúdo.
+## Modelo combinado
 
-## Resultado
+Eu montaria um modelo combinado começando pela pessoa assinante e ligando quatro visões: descoberta de conteúdo, reprodução, assinatura e parceiros. Assim, eu não trataria a Netflix apenas como aplicativo nem apenas como servidores.
 
-O modelo permite explicar o caminho de uma escolha até a reprodução sem confundir o aplicativo com toda a infraestrutura do serviço.
+## Conclusão
 
-## Reflexão pessoal
-
-Transformar a explicação em setas deixou claro que “assistir” envolve mais componentes do que apenas apertar um botão. A principal dificuldade foi decidir o que omitir sem quebrar a ideia central.
-
-## Referências
-
-- Material da Aula 1.2 — Modelos Mentais e Conhecimento Compartilhado.
-
+Eu entendi que os modelos não concorrem entre si: cada um responde a uma pergunta diferente. Como não registrei uma comparação presencial, não afirmo que ela ocorreu.

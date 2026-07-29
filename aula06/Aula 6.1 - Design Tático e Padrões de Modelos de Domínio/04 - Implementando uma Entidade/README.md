@@ -3,13 +3,31 @@
 ## Identificação
 
 - Aula: 6.1
-- Tipo: Java
+- Tema: Entidade
+- Linguagem: Java
 
-## Solução
+## Ideia do exemplo
 
-`Chamado` mantém a mesma identidade durante seu ciclo de vida, mesmo quando descrição ou status mudam. O método `concluir` protege a transição de estado dentro da entidade.
+Usei um chamado de manutenção como entidade. Mesmo que o estado do chamado seja alterado, ele continua sendo o mesmo chamado porque mantém seu código de identificação.
 
-## Resultado
+## Estrutura
 
-O exemplo imprime o identificador do chamado seguido de `CONCLUIDO`.
+| Arquivo | Responsabilidade |
+|---|---|
+| `Chamado.java` | Representa o chamado, seu código, descrição e status. |
+| `Main.java` | Cria um chamado, conclui o atendimento e imprime o estado final. |
 
+## O que o código demonstra
+
+- Identidade: o código `CH-001` distingue o chamado;
+- Estado: o chamado começa como `ABERTO`;
+- Comportamento: `concluir()` realiza a mudança de estado;
+- Encapsulamento: o status não é modificado diretamente fora da entidade.
+
+## Resultado esperado
+
+```text
+CH-001 - CONCLUIDO
+```
+
+O exemplo mostra que a identidade permanece a mesma antes e depois da mudança de estado.

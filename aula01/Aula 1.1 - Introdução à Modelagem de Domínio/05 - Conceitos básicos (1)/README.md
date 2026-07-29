@@ -94,3 +94,6 @@ O diagrama apresenta os principais elementos envolvidos no sistema, como **clien
 O fluxo representado no diagrama pode ser entendido da seguinte forma: o **cliente** realiza o pedido pelo **aplicativo/plataforma**, escolhendo restaurante e produtos. Em seguida, o sistema processa o **pagamento** e envia o pedido ao **restaurante**, que prepara a comida. Depois, o sistema aciona o **entregador**, que realiza a **entrega** ao cliente. Ao final, o cliente pode registrar uma **avaliação** sobre o serviço.
 
 Esse modelo ajuda a visualizar de maneira clara os principais atores, ações e relacionamentos existentes em uma aplicação de entrega de comidas.
+# Minha perspectiva
+
+Eu construí este modelo mental considerando o fluxo que eu espero observar em uma aplicação de entrega de comidas.

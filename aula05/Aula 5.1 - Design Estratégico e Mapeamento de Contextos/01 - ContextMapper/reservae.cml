@@ -1,8 +1,0 @@
-ContextMap ReservaEContextMap {
-  contains Catalogo, Reservas, Pagamentos
-  Catalogo [D, U]
-  Reservas [D, U]
-  Pagamentos [D, U]
-  Catalogo -> Reservas : CF
-  Reservas -> Pagamentos : ACL
-}

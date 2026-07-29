@@ -1,87 +1,21 @@
-# EXEMPLO: MODELOS COMPUTACIONAIS
+# Por que modelar?
 
-## Algoritmo escolhido: QuickSort
+## Modelos escolhidos
 
----
+Escolhi o diagrama entidade-relacionamento, o wireframe e o diagrama de estados de uma entrega. Cada um mostra uma parte diferente de um sistema: os dados, a interação com a pessoa usuária e as mudanças de situação ao longo do processo.
 
-## 1. Considerando um segundo algoritmo de ordenação (QuickSort), explique usando diferentes perspectivas
+## Relação com os propósitos da modelagem
 
-### 1.1 Linguagem natural
+O diagrama entidade-relacionamento ajuda principalmente na análise e no projeto, pois deixa visível quais informações precisam existir e como se relacionam. Também facilita a documentação quando a equipe precisa revisar uma decisão sobre dados.
 
-A partir da análise do algoritmo, entendi que o **QuickSort** organiza um vetor escolhendo um **pivô** (no exemplo, o último elemento).
+O wireframe contribui para entendimento e comunicação. Antes de programar uma tela, é possível discutir a ordem das informações, os caminhos de navegação e o que a pessoa precisa fazer. Ele não resolve regras do negócio, mas evita que a interface seja tratada como um detalhe tardio.
 
-Depois disso, ele separa os elementos em dois grupos:
+O diagrama de estados é útil para análise e comunicação de regras. Em uma entrega, por exemplo, um pedido pode estar aguardando confirmação, em preparo, a caminho ou concluído. Representar essas mudanças ajuda a evitar situações incoerentes, como marcar uma entrega como concluída antes de ela sair do restaurante.
 
-- valores **menores que o pivô** ficam à esquerda;
-- valores **maiores que o pivô** ficam à direita.
+## Representações complementares
 
-Esse processo é repetido para cada novo subvetor gerado, até que não seja mais possível dividir. No final, todos os elementos acabam organizados da esquerda para a direita.
-
----
-
-### 1.2 Diagrama livre
-
-![Diagrama livre do QuickSort](assets/diagrama-livre.webp)
-
----
-
-### 1.3 Pseudo-código
-
-```text
-função quickSort(vetor, inicio, fim)
-    se inicio < fim então
-        pivo = particiona(vetor, inicio, fim)
-        quickSort(vetor, inicio, pivo - 1)
-        quickSort(vetor, pivo + 1, fim)
-    fim se
-fim função
-
-função particiona(vetor, inicio, fim)
-    pivo = vetor[fim]
-    i = inicio - 1
-
-    para j de inicio até fim - 1 faça
-        se vetor[j] < pivo então
-            i = i + 1
-            trocar vetor[i] com vetor[j]
-        fim se
-    fim para
-
-    trocar vetor[i + 1] com vetor[fim]
-    retornar i + 1
-fim função
-```
-
----
-
-### 1.4 Diagrama formal (DFD)
-
-![DFD do QuickSort](assets/DFD.png)
-
----
-
-## 2. Comparação das perspectivas
-
-### Linguagem natural
-
-Mais fácil de entender no início, pois explica a ideia geral do algoritmo de forma simples.
-
-### Diagrama livre
-
-Ajuda bastante na visualização do processo, mostrando como o vetor é dividido.
-
-### Pseudo-código
-
-Mais técnico, exige conhecimento de programação, mas é essencial para implementar.
-
-### Diagrama formal (DFD)
-
-Mais estruturado e usado em modelagem, porém exige mais conhecimento para interpretar.
-
----
+Um DER não mostra com clareza a sequência de ações; para isso, eu acrescentaria um diagrama de sequência ou um fluxograma. Um wireframe não explica validações e regras; nesse caso, histórias de usuário e critérios de aceite ajudam. Já o diagrama de estados não revela a estrutura de dados; ele pode ser complementado pelo DER.
 
 ## Conclusão
 
-Cada forma de representação ajuda de um jeito diferente. A linguagem natural facilita o entendimento inicial, o diagrama livre ajuda a visualizar, o pseudo-código mostra como implementar e o DFD organiza o processo de forma mais formal.
-
-Por isso, usar várias representações juntas torna o aprendizado mais completo.
+Modelar não é apenas produzir diagramas. É escolher uma representação adequada para compreender um problema, conversar sobre ele e registrar decisões antes que elas virem código difícil de alterar.

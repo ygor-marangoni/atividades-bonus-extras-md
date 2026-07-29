@@ -1,26 +1,13 @@
-# Linguagem Ubíqua
-
-## Identificação
-
-- Aula: 2.1
-- Tema: vocabulário compartilhado
-- Tipo: glossário
+# Linguagem Ubíqua: o significado de “voo”
 
 ## Enunciado
 
-Analisar termos que podem ter sentidos diferentes e propor nomes compartilhados dentro de contextos delimitados.
+Definir e caracterizar os usos do termo **voo** em uma empresa de transporte aéreo, considerando Controle de Tráfego, Aquisição de Passagens, Faturamento e Manutenção; indicar os possíveis domínios em que o termo é aplicado.
 
-## Solução
+## Minha análise
 
-No Reservaê, o termo “disponibilidade” tem significados diferentes. No contexto de catálogo, é a informação exibida para pesquisa. No contexto de reservas, é a condição calculada para um período específico, considerando bloqueios e reservas confirmadas. No contexto financeiro, ela não define se uma cobrança pode ser feita.
+Eu percebi que “voo” não possui um único significado útil para toda a empresa. No **Controle de Tráfego**, voo é uma operação em andamento: aeronave, plano, posição, altitude, rota e horários operacionais. Na **Aquisição de Passagens**, voo é uma oferta comercial, com origem, destino, data, assentos e tarifa.
 
-| Contexto | Termo acordado | Significado |
-|---|---|---|
-| Catálogo | calendário publicado | períodos que o anfitrião expôs |
-| Reservas | período reservável | intervalo sem conflito e aceito pelas regras |
-| Financeiro | cobrança autorizada | pagamento permitido para uma reserva confirmada |
+Para o **Faturamento**, eu entendo voo como uma referência que ajuda a consolidar receitas, reembolsos, taxas e serviços contratados. Já na **Manutenção**, ele é um conjunto de horas, ciclos e ocorrências que afetam a condição da aeronave e o planejamento das intervenções.
 
-## Resultado
-
-O mesmo substantivo não precisa ter uma definição global. O importante é que cada contexto tenha termos consistentes em conversa, código e teste.
-
+Eu separaria o problema nos contextos **Operação de Voo**, **Comercial**, **Financeiro** e **Manutenção**. Assim, eu evitaria uma única classe chamada `Voo` acumulando informações sem relação direta. O mesmo nome pode continuar sendo usado nas conversas, mas cada contexto precisa explicitar o sentido que utiliza.

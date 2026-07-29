@@ -1,18 +1,23 @@
 # Arquitetura (2)
 
-## Identificação
+## Projeto analisado
 
-- Aula: 7.2
-- Tema: análise de organização de projeto
-- Tipo: proposta de melhoria
+Para esta atividade, retornei ao projeto **Pizza Express**, um catálogo digital com painel administrativo. Pelo README do projeto, ele possui frontend em Next.js, API em Express com TypeScript, PostgreSQL para dados transacionais, Elasticsearch para busca e Docker Compose para iniciar os serviços de forma integrada.
 
-## Solução
+## Estilo arquitetural utilizado
 
-Em um projeto organizado apenas por tecnologia — `controllers`, `services`, `repositories` — é comum que as regras de uma funcionalidade fiquem espalhadas. Para o Pizza Express, uma melhoria é organizar primeiro por capacidade de negócio: `pedido`, `cardapio` e `entrega`. Dentro de `pedido`, os casos de uso, entidades e adaptadores podem ficar próximos.
+Eu identifico uma arquitetura cliente-servidor, separada em frontend e backend. O frontend cuida da interface; a API concentra o acesso às regras e aos dados; PostgreSQL e Elasticsearch assumem responsabilidades diferentes de persistência e busca. O Docker Compose também ajuda a tratar o ambiente como um conjunto de serviços que precisam iniciar na ordem correta.
 
-Isso não elimina camadas; apenas torna mais visível onde uma mudança deve ocorrer. Uma alteração na regra de cancelamento passa a ser encontrada no módulo de pedido, em vez de exigir busca por várias pastas técnicas.
+## Dificuldades percebidas
 
-## Resultado
+O ponto que considero mais trabalhoso nessa organização é manter a integração entre várias partes: interface, API, banco, busca e variáveis de ambiente. Uma mudança em produto ou categoria, por exemplo, pode exigir ajuste no backend, no banco e na indexação da busca. Também é preciso cuidar para que dados usados no catálogo e dados usados na pesquisa não fiquem inconsistentes.
 
-A arquitetura passa a apoiar a linguagem do domínio e reduz o acoplamento acidental entre funcionalidades sem relação.
+## Como eu melhoraria
 
+Eu organizaria o backend cada vez mais por capacidades do negócio, como `catalogo`, `produto`, `categoria` e `administracao`, em vez de deixar a lógica espalhada apenas por tipo técnico. Dentro de cada módulo, eu manteria próximos os casos de uso, validações e acesso aos dados daquela funcionalidade.
+
+Para a integração com Elasticsearch, eu usaria uma fronteira clara: a alteração no catálogo gera uma atualização de índice por um serviço específico, sem permitir que a regra de produto dependa diretamente dos detalhes do mecanismo de busca. Essa separação facilita testar mudanças e trocar detalhes técnicos sem reescrever o que o catálogo significa para o negócio.
+
+## Referência
+
+- [README do projeto Pizza Express](https://github.com/ygor-marangoni/catalogo-pizza-express)

@@ -1,43 +1,29 @@
-# Subdomínio Principal  
-## Atividade: Diferencial Competitivo
+# Identificar e Classificar Subdomínios (1): Gigmaster
 
-### Enunciado
+## Enunciado
 
-1. Identifique quais seriam os diferenciais competitivos e subdomínios principais para os seguintes domínios de negócio/empresas:
+Identificar o domínio de negócio da Gigmaster, classificar os subdomínios associados e indicar decisões de design possíveis.
 
-- Petrobrás
-- Nubank
-- Tesla
-- Netflix
+## Meu entendimento do cenário
 
----
+Eu identifiquei a Gigmaster como uma empresa de venda e distribuição de ingressos. Seu aplicativo procura eventos próximos que possam interessar a cada pessoa, usando informações de preferência e preservando a privacidade de quem utiliza o serviço.
 
-## Petrobrás
+| Subdomínio | Classificação | Justificativa |
+|---|---|---|
+| Recomendação de eventos | Central | É a parte que transforma preferências em sugestões relevantes e pode diferenciar a empresa. |
+| Tratamento anônimo de preferências | Central | A proteção de privacidade está diretamente ligada à confiança necessária para usar a recomendação. |
+| Experiência do aplicativo | Central | É o ponto de contato pelo qual a pessoa descobre, escolhe e compra um evento. |
+| Catálogo e disponibilidade de eventos | Suporte | É essencial para operar, mas não é necessariamente exclusivo da estratégia. |
+| Venda, pagamento e emissão do ingresso | Suporte | Sustenta a transação e precisa ser confiável, embora possa integrar serviços especializados. |
+| Autenticação, autorização e criptografia | Genérico | São problemas recorrentes, com técnicas e serviços consolidados. |
+| Contabilidade e cobrança | Genérico | São necessários ao negócio, mas não constituem o diferencial da recomendação. |
 
-A Petrobrás atua no domínio de energia, principalmente petróleo, gás, combustíveis e novas fontes de energia. Seu diferencial competitivo está na capacidade de explorar petróleo em ambientes altamente complexos, como águas profundas e o pré-sal, além de possuir grande infraestrutura de refino, transporte e comercialização.
+## Decisões de design que eu consideraria
 
-Seu subdomínio principal pode ser definido como a **exploração, produção e processamento de petróleo e gás em larga escala**, porque essa é a área que sustenta sua vantagem no mercado e exige conhecimento técnico especializado.
+Eu separaria recomendação, venda de ingressos e identidade em contextos próprios. O contexto de recomendação receberia somente dados minimizados ou anonimizados, sem precisar conhecer detalhes de cobrança. O contexto comercial cuidaria de disponibilidade, reserva e compra. Essa divisão reduz o risco de a lógica de pagamento expor ou depender das preferências musicais de uma pessoa.
 
----
+Eu também criaria contratos claros para receber dados de serviços de streaming e redes sociais. Assim, uma mudança em um fornecedor externo não obrigaria o algoritmo de recomendação a absorver o formato daquele fornecedor.
 
-## Nubank
+## Referência consultada
 
-O Nubank atua no domínio de serviços financeiros digitais. Seu diferencial competitivo está em transformar serviços bancários tradicionais em uma experiência simples, digital, acessível e centrada no usuário. A empresa se diferencia por reduzir burocracias, usar tecnologia para escalar atendimento e oferecer produtos financeiros com uma interface mais amigável.
-
-Seu subdomínio principal é a **plataforma bancária digital centrada no cliente**, pois é ali que a empresa realmente se diferencia dos bancos tradicionais.
-
----
-
-## Tesla
-
-A Tesla atua no domínio de veículos elétricos, energia e tecnologia automotiva. Seu diferencial competitivo está na combinação entre carro elétrico, bateria, software, automação, infraestrutura de carregamento e marca. Diferente de uma montadora tradicional, a Tesla tenta controlar várias etapas do produto, desde o design até a tecnologia embarcada.
-
-Seu subdomínio principal é o **desenvolvimento integrado de veículos elétricos, baterias e software**, pois essa integração é o que torna seu produto diferente de um carro comum.
-
----
-
-## Netflix
-
-A Netflix atua no domínio de entretenimento digital e streaming. Seu diferencial competitivo está na entrega de conteúdo sob demanda em escala global, usando dados para recomendar filmes e séries, além de investir em catálogo, produções próprias e experiência personalizada.
-
-Seu subdomínio principal é a **distribuição personalizada de conteúdo audiovisual**, porque o valor central da Netflix não está apenas em “ter filmes”, mas em entregar o conteúdo certo, para a pessoa certa, no momento certo, com boa experiência de uso.
+- Khononov, Vlad. *Learning Domain-Driven Design: Aligning Software Architecture and Business Strategy*. O'Reilly, 2021.

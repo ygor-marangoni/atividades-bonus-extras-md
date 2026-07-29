@@ -1,23 +1,13 @@
-# Aplicando DDD (1)
+# Aplicando DDD (1): transporte de passageiros
 
-## Identificação
+## Enunciado
 
-- Aula: 2.1
-- Tema: aplicação inicial do DDD
-- Tipo: modelagem de domínio
+Definir os elementos pertinentes ao domínio central de um serviço de transporte de passageiros com veículos de passeio e apontar os domínios relacionados.
 
-## Solução
+## Minha proposta
 
-No sistema Tower Defender, o núcleo do domínio é a execução de uma partida: posicionar torres, consumir recursos, iniciar ondas e avaliar derrota ou vitória. Um primeiro vocabulário é:
+Eu definiria o domínio central como o **despacho da corrida**. Ele começa quando o passageiro solicita o deslocamento e envolve estimar preço e tempo, encontrar um motorista compatível, acompanhar o início e o encerramento da viagem e registrar as situações que podem alterar esse fluxo.
 
-- **Partida:** sessão com mapa, recursos e estado.
-- **Onda:** conjunto ordenado de inimigos a ser liberado.
-- **Torre:** defesa posicionada que possui alcance e efeito.
-- **Recurso:** saldo gasto em construções e melhorias.
+Os elementos que eu colocaria nesse núcleo são solicitação, origem, destino, motorista elegível, aceite, corrida, trajeto estimado, status e cancelamento. Eles representam a decisão principal do serviço: transformar a necessidade de deslocamento em uma corrida possível e acompanhável.
 
-Regra central: uma torre só pode ser posicionada em local permitido e se a partida tiver recursos suficientes. Essa regra pertence à partida, e não à interface gráfica.
-
-## Resultado
-
-O recorte concentra as regras de jogo antes de decidir motor gráfico, persistência ou formato das telas.
-
+Os domínios relacionados seriam cadastro de passageiros e motoristas, localização, pagamentos, promoções, avaliação, suporte e prevenção a fraude. Eu os manteria próximos ao núcleo, mas com responsabilidades próprias. A localização fornece dados para o despacho; o pagamento recebe o resultado da corrida; o suporte precisa consultar fatos do atendimento sem assumir as regras de alocação.
