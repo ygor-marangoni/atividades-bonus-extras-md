@@ -21,3 +21,7 @@ Para a integração com Elasticsearch, eu usaria uma fronteira clara: a alteraç
 ## Referência
 
 - [README do projeto Pizza Express](https://github.com/ygor-marangoni/catalogo-pizza-express)
+
+---
+
+*Registro revisado em 29/07/2026.*
