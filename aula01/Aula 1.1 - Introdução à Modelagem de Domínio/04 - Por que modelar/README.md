@@ -21,7 +21,7 @@ Esse processo é repetido para cada novo subvetor gerado, até que não seja mai
 
 ### 1.2 Diagrama livre
 
-![Diagrama livre do QuickSort](diagrama-livre.webp)
+![Diagrama livre do QuickSort](<../Aula 1.1 - Introdução à Modelagem de Domínio/04 - Por que modelar/assets/diagrama-livre.webp>)
 
 ---
 
@@ -56,7 +56,7 @@ fim função
 
 ### 1.4 Diagrama formal (DFD)
 
-![DFD do QuickSort](DFD.png)
+![DFD do QuickSort](<../Aula 1.1 - Introdução à Modelagem de Domínio/04 - Por que modelar/assets/DFD.png>)
 
 ---
 

@@ -89,7 +89,7 @@ A partir do modelo mental desenvolvido, foi criado um diagrama ilustrativo para 
 
 O diagrama apresenta os principais elementos envolvidos no sistema, como **cliente**, **aplicativo/plataforma**, **restaurante**, **pagamento**, **entregador**, **entrega** e **avaliação**. Além disso, mostra as relações entre esses elementos, indicando como o pedido passa por cada etapa até ser entregue ao cliente.
 
-![Diagrama ilustrativo do modelo mental](diagrama.png)
+![Diagrama ilustrativo do modelo mental](<../Aula 1.1 - Introdução à Modelagem de Domínio/05 - Conceitos básicos %281%29/assets/diagrama.png>)
 
 O fluxo representado no diagrama pode ser entendido da seguinte forma: o **cliente** realiza o pedido pelo **aplicativo/plataforma**, escolhendo restaurante e produtos. Em seguida, o sistema processa o **pagamento** e envia o pedido ao **restaurante**, que prepara a comida. Depois, o sistema aciona o **entregador**, que realiza a **entrega** ao cliente. Ao final, o cliente pode registrar uma **avaliação** sobre o serviço.
 
