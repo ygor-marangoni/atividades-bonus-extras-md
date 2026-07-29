@@ -2,26 +2,122 @@
 
 ## Projeto analisado
 
-Para esta atividade, retornei ao projeto **Pizza Express**, um catálogo digital com painel administrativo. Pelo README do projeto, ele possui frontend em Next.js, API em Express com TypeScript, PostgreSQL para dados transacionais, Elasticsearch para busca e Docker Compose para iniciar os serviços de forma integrada.
+Para esta atividade, selecionei o projeto **Pizza Express**, uma aplicação de catálogo digital com painel administrativo.
 
-## Estilo arquitetural utilizado
+### Tecnologias utilizadas
 
-Eu identifico uma arquitetura cliente-servidor, separada em frontend e backend. O frontend cuida da interface; a API concentra o acesso às regras e aos dados; PostgreSQL e Elasticsearch assumem responsabilidades diferentes de persistência e busca. O Docker Compose também ajuda a tratar o ambiente como um conjunto de serviços que precisam iniciar na ordem correta.
-
-## Dificuldades percebidas
-
-O ponto que considero mais trabalhoso nessa organização é manter a integração entre várias partes: interface, API, banco, busca e variáveis de ambiente. Uma mudança em produto ou categoria, por exemplo, pode exigir ajuste no backend, no banco e na indexação da busca. Também é preciso cuidar para que dados usados no catálogo e dados usados na pesquisa não fiquem inconsistentes.
-
-## Como eu melhoraria
-
-Eu organizaria o backend cada vez mais por capacidades do negócio, como `catalogo`, `produto`, `categoria` e `administracao`, em vez de deixar a lógica espalhada apenas por tipo técnico. Dentro de cada módulo, eu manteria próximos os casos de uso, validações e acesso aos dados daquela funcionalidade.
-
-Para a integração com Elasticsearch, eu usaria uma fronteira clara: a alteração no catálogo gera uma atualização de índice por um serviço específico, sem permitir que a regra de produto dependa diretamente dos detalhes do mecanismo de busca. Essa separação facilita testar mudanças e trocar detalhes técnicos sem reescrever o que o catálogo significa para o negócio.
-
-## Referência
-
-- [README do projeto Pizza Express](https://github.com/ygor-marangoni/catalogo-pizza-express)
+| Camada | Tecnologia | Responsabilidade |
+|---|---|---|
+| Frontend | **Next.js** | Interface do cliente e painel administrativo |
+| Backend | **Express com TypeScript** | API e regras de negócio |
+| Banco de dados | **PostgreSQL** | Armazenamento dos dados transacionais |
+| Busca | **Elasticsearch** | Pesquisa de produtos e categorias |
+| Infraestrutura | **Docker Compose** | Integração e inicialização dos serviços |
 
 ---
 
-*Registro revisado em 29/07/2026.*
+## Estilo arquitetural utilizado
+
+O projeto segue uma arquitetura **cliente-servidor**, com separação entre frontend e backend.
+
+Também apresenta uma organização em camadas:
+
+```text
+Frontend
+   ↓
+API REST
+   ↓
+Regras de negócio
+   ↓
+PostgreSQL
+```
+
+O frontend realiza requisições para a API, enquanto o backend concentra as regras de negócio e o acesso aos dados.
+
+O **PostgreSQL** mantém os dados principais da aplicação, enquanto o **Elasticsearch** funciona como uma estrutura especializada para busca.
+
+---
+
+## Dificuldades encontradas
+
+A principal dificuldade foi manter a integração e a consistência entre:
+
+- interface;
+- API;
+- banco de dados;
+- mecanismo de busca;
+- variáveis de ambiente.
+
+Uma alteração em produtos ou categorias pode exigir mudanças em diferentes partes do sistema e também a atualização do índice do Elasticsearch.
+
+Isso aumenta o risco de:
+
+- duplicação de regras;
+- falhas de sincronização;
+- inconsistência entre catálogo e pesquisa;
+- maior esforço de manutenção.
+
+---
+
+## 4. Como o projeto poderia ser melhorado
+
+Eu reorganizaria o backend em módulos de negócio, como:
+
+```text
+catalogo/
+pedidos/
+clientes/
+administracao/
+```
+
+Dentro de cada módulo, ficariam próximos:
+
+- casos de uso;
+- validações;
+- serviços;
+- repositórios;
+- regras relacionadas à funcionalidade.
+
+Essa abordagem se aproxima de uma **arquitetura modular**, reduzindo o acoplamento entre as funcionalidades e facilitando a manutenção.
+
+---
+
+## Integração com o Elasticsearch
+
+A integração com o Elasticsearch também poderia ser **orientada a eventos**.
+
+Exemplo:
+
+```text
+Produto criado ou alterado
+          ↓
+Evento gerado
+          ↓
+Serviço de indexação
+          ↓
+Elasticsearch atualizado
+```
+
+Dessa forma, a regra de negócio do produto não dependeria diretamente dos detalhes do Elasticsearch.
+
+### Benefícios
+
+- maior separação de responsabilidades;
+- facilidade para testar as regras de negócio;
+- redução do acoplamento;
+- manutenção mais simples;
+- possibilidade de trocar o mecanismo de busca no futuro.
+
+---
+
+## Conclusão
+
+A arquitetura atual atende ao funcionamento da aplicação, mas pode evoluir para uma estrutura mais modular e desacoplada.
+
+A separação por capacidades do negócio e o uso de eventos para atualizar o mecanismo de busca ajudariam a reduzir inconsistências e tornar o sistema mais fácil de manter e expandir.
+
+---
+
+## Referência
+
+- [Projeto Pizza Express](https://github.com/ygor-marangoni/catalogo-pizza-express)
