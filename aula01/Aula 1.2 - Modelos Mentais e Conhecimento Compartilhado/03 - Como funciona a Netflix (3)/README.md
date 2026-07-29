@@ -1,30 +1,15 @@
 # Como funciona a Netflix? (3)
 
-## Identificação
-
-- Aula: 1.2
-- Tema: modelos mentais diferentes
-- Tipo: análise comparativa
-
 ## Enunciado
 
-Comparar perspectivas de pessoas envolvidas em um serviço de streaming e apontar como elas afetam o entendimento do sistema.
+Refazer os comparativos dos modelos vistos, indicar propósito e funcionalidade de cada um e justificar qual é mais adequado para cada público.
 
-## Solução
+## Análise
 
-| Perspectiva | O que considera essencial | Risco de usá-la isoladamente |
-|---|---|---|
-| Pessoa assinante | encontrar e assistir a um título sem interrupções | ignorar direitos, operação e custo |
-| Equipe de conteúdo | publicar obras com metadados e disponibilidade corretos | tratar a entrega técnica como detalhe |
-| Operação da plataforma | servir mídia estável em vários dispositivos | perder critérios de descoberta e valor percebido |
+Para mim, o infográfico é melhor para uma apresentação inicial, pois explica o serviço sem exigir domínio técnico. Eu usaria a arquitetura de alto nível para discutir disponibilidade, componentes e tráfego. O modelo de negócio me ajudou a entender como assinatura, conteúdo licenciado e receita se conectam. Já o ecossistema foi mais apropriado para eu observar parceiros, fornecedores, concorrentes e titulares de direitos.
 
-Um termo como “disponível” precisa ser combinado: para a pessoa assinante significa que o título pode ser reproduzido; para conteúdo, que os direitos e metadados foram liberados; para operação, que há uma rota de entrega saudável.
+Não existe um único “melhor” modelo. Para uma pessoa usuária, o infográfico é mais claro; para a equipe técnica, a arquitetura; para gestão, o modelo de negócio; e para análise estratégica, o ecossistema.
 
-## Resultado
+## Conclusão
 
-O conhecimento compartilhado surge ao registrar as diferenças e negociar uma definição usada no contexto adequado, em vez de presumir que todos empregam as mesmas palavras com o mesmo sentido.
-
-## Reflexão pessoal
-
-Percebi que divergências de vocabulário podem parecer pequenas, mas mudam requisitos e testes. Em um projeto real, eu registraria esses termos desde as primeiras conversas.
-
+Ao refazer o comparativo, percebi que a escolha de um modelo depende da pergunta que eu quero responder e do público que vai utilizá-lo.

@@ -1,17 +1,16 @@
-import java.util.UUID;
-
 public class Chamado {
-    private final UUID id;
+    private final String codigo;
     private String descricao;
     private Status status = Status.ABERTO;
 
-    public Chamado(UUID id, String descricao) {
+    public Chamado(String codigo, String descricao) {
+        if (codigo == null || codigo.isBlank()) throw new IllegalArgumentException("Código obrigatório.");
         if (descricao == null || descricao.isBlank()) throw new IllegalArgumentException("Descrição obrigatória.");
-        this.id = id;
+        this.codigo = codigo;
         this.descricao = descricao;
     }
     public void concluir() { if (status == Status.ABERTO) status = Status.CONCLUIDO; }
-    public UUID id() { return id; }
+    public String codigo() { return codigo; }
     public Status status() { return status; }
     public enum Status { ABERTO, CONCLUIDO }
 }

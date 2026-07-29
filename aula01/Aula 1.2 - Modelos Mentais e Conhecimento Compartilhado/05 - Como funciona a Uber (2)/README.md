@@ -10,26 +10,12 @@
 
 Representar um recorte do ciclo de vida de uma solicitação de corrida.
 
-## Solução
+# Registro honesto
 
-```mermaid
-stateDiagram-v2
-    [*] --> Cotada
-    Cotada --> Solicitada: passageiro confirma
-    Solicitada --> ComMotorista: motorista aceita
-    Solicitada --> Cancelada: prazo expira ou usuário cancela
-    ComMotorista --> EmDeslocamento: embarque confirmado
-    EmDeslocamento --> Finalizada: destino alcançado
-    Finalizada --> Avaliada: avaliação opcional
-    Cancelada --> [*]
-    Avaliada --> [*]
-```
+Eu não tenho modelos de colegas registrados para comparação. Por isso, considerei os modelos de passageiro, motorista e plataforma apresentados pela própria atividade.
 
-## Análise e justificativa
+Eu percebi que o modelo do passageiro enfatiza pedido, preço e chegada; o do motorista enfatiza oferta, rota e recebimento; e o da plataforma enfatiza a conciliação entre demanda, localização e pagamento. Eu criaria uma versão combinada preservando as três perspectivas.
 
-Estados evitam combinações inválidas, como registrar uma avaliação antes de uma corrida finalizada. A cotação foi separada da solicitação porque consultar uma estimativa não cria, por si só, um compromisso de atendimento.
+## Conclusão
 
-## Resultado
-
-O diagrama serve de base para conversas sobre regras, notificações e eventos que devem ocorrer em cada mudança de estado.
-
+As diferenças estão no ponto de vista, não em sistemas separados. A comparação com colegas não foi declarada porque não há evidência registrada dela.

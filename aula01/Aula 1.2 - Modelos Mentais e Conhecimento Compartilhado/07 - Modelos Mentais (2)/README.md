@@ -12,17 +12,14 @@ Propor uma prática para transformar entendimentos individuais em conhecimento c
 
 ## Solução
 
-Para o sistema Reservaê, eu realizaria uma conversa curta com anfitrião, hóspede e atendimento usando exemplos de reserva. Durante a conversa, a equipe manteria um glossário vivo:
+Eu escolhi o WhatsApp como plataforma popular. No meu modelo mental básico, incluí pessoa usuária, conversa, mensagem, servidor e notificação. Diferentemente de uma plataforma de streaming, entendi que o fluxo principal não é reproduzir catálogo, mas enviar e confirmar comunicação entre participantes.
 
-| Termo | Definição acordada |
-|---|---|
-| Pré-reserva | bloqueio temporário que ainda pode expirar sem cobrança |
-| Reserva confirmada | estadia com pagamento aprovado e período bloqueado |
-| Check-in | registro de chegada dentro da janela da reserva |
+```mermaid
+flowchart LR
+U[Usuário] --> C[Conversa]
+C --> S[Serviço de mensagens]
+S --> R[Pessoa destinatária]
+S --> N[Notificação]
+```
 
-Cada termo seria usado em histórias, telas e testes. Quando surgir uma exceção, o glossário e os exemplos devem ser ajustados juntos.
-
-## Resultado
-
-O artefato não substitui conversas, mas deixa as decisões rastreáveis e reduz interpretações implícitas.
-
+O exercício reforçou para mim que os mesmos recursos de modelagem usados para Netflix e Uber podem ser aplicados a outro domínio, mas os elementos relevantes mudam conforme o objetivo do sistema.

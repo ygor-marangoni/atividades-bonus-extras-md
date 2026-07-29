@@ -25,3 +25,6 @@ Esses modelos ajudaram a compreender melhor os conceitos porque transformam algo
 Como vantagens, esses modelos tornam o entendimento mais claro, facilitam a comunicação e permitem identificar problemas antes da execução real. Eles também ajudam no planejamento e na tomada de decisões.
 
 Como desvantagens, podem simplificar demais a realidade, deixando de fora detalhes importantes. Além disso, dependendo do modelo, pode haver limitação na representação de comportamentos mais complexos ou dinâmicos. Em alguns casos, também exigem tempo para serem criados.
+# Minha perspectiva
+
+Eu selecionei estes exemplos porque eles me ajudaram a compreender processos e estruturas de forma mais concreta.

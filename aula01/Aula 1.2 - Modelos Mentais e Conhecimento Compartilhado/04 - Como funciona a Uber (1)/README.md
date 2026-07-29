@@ -14,9 +14,17 @@ Explicar o funcionamento principal de uma plataforma que conecta passageiros e m
 
 Uma pessoa informa origem e destino. A plataforma estima rota, prazo e valor antes da confirmação. Quando a corrida é solicitada, a plataforma procura motoristas elegíveis nas proximidades e encaminha a oferta. Após o aceite, passageiro e motorista acompanham dados mínimos da viagem. Ao término, o valor é calculado conforme as regras aplicáveis, o pagamento é registrado e ambas as partes podem avaliar a experiência.
 
-O serviço não é somente um mapa: ele coordena disponibilidade, comunicação, preço, segurança e fechamento financeiro.
+Eu entendi que o serviço não é somente um mapa: ele coordena disponibilidade, comunicação, preço, segurança e fechamento financeiro.
+
+```mermaid
+flowchart LR
+P[Passageiro] --> A[Aplicativo]
+A --> M[Busca de motorista]
+M --> C[Corrida]
+C --> PG[Pagamento]
+C --> AV[Avaliação]
+```
 
 ## Reflexão pessoal
 
 O fluxo mostrou que “achar um motorista” é apenas uma etapa. Para modelar algo semelhante, eu começaria pelos estados de uma corrida e pelas regras de transição entre eles.
-

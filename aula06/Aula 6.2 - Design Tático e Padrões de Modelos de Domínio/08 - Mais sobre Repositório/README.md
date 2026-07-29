@@ -1,5 +1,7 @@
 # Atividade — ProdutoRepositorio
 
+[Abrir implementação Java por arquivo serializado](src/Main.java)
+
 ## Tema
 
 Implementar um `ProdutoRepositorio` com uma operação para buscar produtos por faixa de preço.

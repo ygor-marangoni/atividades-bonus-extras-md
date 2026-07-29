@@ -1,5 +1,7 @@
 # EXEMPLO: MODELOS COMPUTACIONAIS
 
+Complemento com QuickSort e representações visuais: [quick-sort.md](quick-sort.md).
+
 ## 1. A partir do exemplo do código do MergeSort, tente escrever seu entendimento sobre o funcionamento geral do algoritmo:
 
 A partir do código, entendi que o **MergeSort** é um algoritmo de ordenação que trabalha dividindo o vetor em partes menores para depois reorganizá-las em ordem.
@@ -33,3 +35,6 @@ Sim. Uma forma melhor de entender o **MergeSort** seria por meio de **modelagem*
 Por exemplo, um diagrama mostrando o vetor sendo dividido em partes menores e depois sendo unido novamente em ordem ajudaria bastante. Também seria útil fazer um teste de mesa com poucos números, acompanhando passo a passo cada divisão e cada comparação.
 
 Além disso, animações ou representações visuais poderiam facilitar a compreensão, porque mostram o comportamento do algoritmo de forma mais concreta. Assim, a modelagem ajuda a transformar o código em uma representação mais clara do processo, facilitando o entendimento do funcionamento geral do **MergeSort**.
+# Minha perspectiva
+
+Eu usei os exemplos abaixo para registrar como entendi a representação de algoritmos.

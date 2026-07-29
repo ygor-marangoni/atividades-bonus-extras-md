@@ -1,22 +1,19 @@
-# Exemplos práticos
+# Exemplos práticos de aplicação do DDD
 
-## Identificação
+## Enunciado
 
-- Aula: 2.1
-- Tema: Projeto Orientado pelo Domínio
-- Tipo: análise
+Resumir os casos estudados, identificar conceitos de DDD presentes neles e citar dois outros casos de sucesso ou aplicação de DDD em sistemas conhecidos.
 
-## Objetivo
+## Meu entendimento dos casos
 
-Reconhecer situações em que regras do negócio merecem aparecer explicitamente no modelo.
+Nos exemplos trabalhados, eu percebi que o ponto principal não é usar um conjunto de classes sofisticadas. O ponto é representar as regras que realmente tornam o sistema diferente. Em uma plataforma de entrega, por exemplo, prazo de preparo, aceitação do restaurante, disponibilidade do entregador e cancelamento alteram o comportamento do pedido; não são apenas dados armazenados.
 
-## Solução
+Os conceitos que identifiquei foram domínio, especialistas do domínio, linguagem ubíqua, contexto delimitado e regras de negócio explícitas. Para mim, eles funcionam juntos: as regras são compreendidas com as pessoas da área, recebem nomes claros e ficam organizadas dentro de uma fronteira que preserva seu significado.
 
-No Pizza Express, um pedido não pode ser tratado somente como uma lista de itens. Há regras como tamanho permitido de sabores, limite de área de entrega, horário de funcionamento, cupom aplicável e cancelamento antes do início do preparo. Um CRUD de pedidos consegue guardar dados, mas não expressa com clareza essas decisões.
+## Dois casos que considero adequados
 
-No Aprender+, uma inscrição depende de vaga, pré-requisito, período de matrícula e situação acadêmica. Em ambos os casos, o domínio orienta os nomes e as operações: `confirmarPedido`, `iniciarPreparo`, `matricular` e `validarPreRequisito` comunicam intenção melhor do que comandos genéricos de atualizar registros.
+Em uma operação de comércio eletrônico, eu aplicaria DDD principalmente na gestão do pedido. Estoque reservado, pagamento aprovado, separação, envio e devolução possuem estados e consequências próprias. Separar catálogo, checkout, estoque e logística evita que uma alteração de preço, por exemplo, tenha efeitos imprevisíveis na expedição.
 
-## Reflexão pessoal
+Também vejo valor em DDD para sistemas bancários. Limite, tarifa, liquidação, bloqueio e contestação não podem ser tratados como simples campos de uma conta. Cada conceito depende de regras, prazos e responsabilidades diferentes. Nesse cenário, uma linguagem precisa ajuda a reduzir interpretações diferentes entre atendimento, negócio e desenvolvimento.
 
-Os exemplos reforçaram que DDD não é uma camada extra obrigatória; ele faz mais sentido quando as regras são relevantes e mudam o comportamento do sistema.
-
+Minha conclusão é que DDD faz mais sentido quando as decisões do negócio são o centro do problema. Para um cadastro simples, eu começaria de modo mais direto; para regras que mudam e possuem exceções, eu investiria na modelagem do domínio.

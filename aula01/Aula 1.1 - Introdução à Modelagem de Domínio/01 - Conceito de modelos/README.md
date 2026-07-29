@@ -30,3 +30,6 @@ O Wireframe se destaca por ser uma representação visual simples das telas, sem
 O MVC, por sua vez, não é um diagrama, mas um padrão de organização do sistema. Ele separa responsabilidades, o que melhora a clareza e manutenção do código.
 
 Em comum, todos esses modelos são formas de abstração da realidade. Eles ajudam a planejar o sistema antes da implementação, facilitam a comunicação entre os envolvidos no projeto e reduzem erros durante o desenvolvimento. A principal diferença entre eles está no foco: dados (DER), estrutura e comportamento (UML), interface (Wireframe) e organização do sistema (MVC).
+# Minha perspectiva
+
+Eu analisei os modelos abaixo pensando em como eles podem me ajudar a entender e organizar um sistema antes da implementação.

@@ -1,14 +1,20 @@
-# Diferencial Competitivo
+# Diferencial competitivo
 
-## Identificação
+## Enunciado
 
-- Aula: 4.1
-- Tema: subdomínios e estratégia
-- Tipo: análise
+Identificar diferenciais competitivos e subdomínios principais para Petrobras, Nubank, Tesla e Netflix.
 
-## Solução
+## Minha análise
 
-Uma empresa que vende apenas catálogo e pagamento tende a competir por alcance e preço. Já uma plataforma de manutenção de máquinas pode se diferenciar ao recomendar intervenções com base em histórico de uso, criticidade do equipamento e disponibilidade de técnico. Esse mecanismo de priorização é candidato a domínio central porque materializa uma estratégia difícil de substituir por um componente pronto.
+| Empresa | Diferencial que identifiquei | Subdomínio principal | Justificativa |
+|---|---|---|---|
+| Petrobras | Operação integrada de energia e conhecimento técnico para explorar e produzir em ambientes complexos. | Exploração e produção de petróleo e gás. | É onde decisões geológicas, operacionais e de segurança têm grande impacto econômico. |
+| Nubank | Experiência financeira digital simples, com produtos integrados e atendimento orientado pelo aplicativo. | Produtos financeiros digitais e relacionamento com o cliente. | O valor não está só em registrar transações, mas em reduzir atrito no uso de serviços financeiros. |
+| Tesla | Integração entre veículo elétrico, software embarcado, bateria e infraestrutura de energia. | Plataforma de mobilidade elétrica. | A combinação desses elementos diferencia o produto de uma montadora que apenas compra componentes prontos. |
+| Netflix | Experiência de entretenimento sob demanda, distribuição em escala e personalização da descoberta de conteúdo. | Entrega e descoberta de conteúdo audiovisual. | A recomendação e a disponibilidade afetam diretamente a percepção de valor de quem assiste. |
 
-Cadastro de clientes, autenticação e emissão de recibos continuam importantes, mas não são necessariamente a origem da vantagem competitiva. Investir o mesmo nível de sofisticação em todos os subdomínios desperdiça foco.
+Eu não considerei que todos os sistemas dessas empresas sejam igualmente estratégicos. Cadastro, autenticação, folha de pagamento e emissão de documentos são necessários, mas normalmente não explicam por que uma dessas empresas é escolhida em vez de outra. Para mim, essa distinção é justamente o objetivo de separar o subdomínio principal dos subdomínios de suporte e dos genéricos.
 
+## Referência consultada
+
+- Khononov, Vlad. *Learning Domain-Driven Design: Aligning Software Architecture and Business Strategy*. O'Reilly, 2021.
