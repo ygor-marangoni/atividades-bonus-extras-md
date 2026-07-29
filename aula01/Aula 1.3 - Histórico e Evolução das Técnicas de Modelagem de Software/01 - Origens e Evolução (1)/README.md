@@ -1,3 +1,3 @@
 # Origens e Evolução (1)
 
-Enunciado original pendente. Consulte [pendências](../../../PENDENCIAS_MANUAIS.md).
+**Situação: não concluída.** O enunciado original não foi identificado.
