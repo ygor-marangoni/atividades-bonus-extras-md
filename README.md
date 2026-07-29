@@ -81,7 +81,7 @@ As notas abaixo seguem o percentual de atividades concluídas em cada aula: nota
 
 ## Relatório consolidado
 
-As anotações, respostas, diagramas e códigos ficam nos READMEs de cada atividade. A estrutura foi validada: as 53 atividades do inventário possuem pastas individuais e não há arquivos `.class` no repositório.
+As anotações, respostas, diagramas e códigos ficam nos READMEs de cada atividade.
 
 ### Aula 6.1 — pendência de material
 
@@ -92,5 +92,3 @@ As atividades da aula foram registradas em 29/07/2026. Nas quatro atividades ini
 - Link: PREENCHER APÓS A GRAVAÇÃO
 - Duração: PREENCHER
 - Data da gravação: PREENCHER
-
-Os registros são individuais e a autoavaliação é uma referência preliminar, sujeita à validação do professor.
