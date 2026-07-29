@@ -1,3 +1,3 @@
 # Origens e Evolução (2)
 
-**Situação: não fiz.**
+**Situação: atividade não realizada.**
