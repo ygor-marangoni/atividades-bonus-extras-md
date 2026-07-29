@@ -55,31 +55,6 @@ java -cp $env:TEMP\md-build Main
 
 Os registros são individuais e devem ser revisados pelo estudante antes da entrega final.
 
-## Autoavaliação das atividades
-
-| Aula | Atividade | Autoavaliação | Situação |
-|---|---|---:|---|
-| 1.1 | Conceito de modelos; Exemplos de modelos gerais; Representando modelos computacionais; Por que modelar? | 3 | Registradas |
-| 1.1 | Conceitos básicos (1) e (2) | 3 | Um registro existente requer confirmação de vínculo |
-| 1.2 | Netflix (1), (2), (3); Uber (1), (2); Modelos Mentais (1), (2) | 3 | Registros organizados |
-| 1.3 | Origens e Evolução (1) e (2) | 3 | Enunciados pendentes; não declaradas concluídas |
-| 2.1 | Analogia; Exemplos práticos; Limitações; Domínio Central; Linguagem Ubíqua | 4 | Registros organizados |
-| 2.1 | Reflexão (1), Aplicando DDD (1) e (2) | 4 | Registros organizados |
-| 2.1 | Reflexão (2) | 4 | Enunciado pendente; não declarada concluída |
-| 4.1 | Diferencial Competitivo; Subdomínios (1) e (2) | 5 | Registros organizados |
-| 5.1 | ContextMapper; Parceria/SK; CF/ACL; ACL/OHS/PL; C/S/SW/SK | 5 | Nove atividades organizadas |
-| 6.1 | Value Object; Objetos de Valor; Entidade; Agregado | 5 | Sete atividades organizadas, com fontes Java nas implementações |
-| 6.2 | Serviço; Evento; Fábrica; Repositório e aprofundamentos | 5 | Oito atividades organizadas, com fontes Java |
-| 7.2 | Arquitetura (1) e (2) | 5 | Registros organizados |
-
-Os critérios usados são: nota 5 para 100% das atividades da aula registradas; 4 para 80% ou mais; 3 para 50% ou mais; 2 para 30% ou mais; 1 para 10% ou mais; e 0 abaixo disso. Atividades cujo enunciado não foi identificado não são consideradas concluídas.
-
-## Pendências
-
-- Aula 1.3 — Origens e Evolução (1) e (2): enunciados necessários.
-- Aula 2.1 — Reflexão (2): enunciado necessário.
-- A compilação dos exemplos Java depende de um ambiente com JDK (`javac`).
-
 ## Planilha detalhada de autoavaliação
 
 | Aula | Atividade | Auto-avaliação | Justificativa | Data/Hora completada | Link para o registro da atividade no repositório |
