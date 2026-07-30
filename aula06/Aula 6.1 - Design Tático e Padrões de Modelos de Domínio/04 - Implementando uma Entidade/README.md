@@ -1,33 +1,7 @@
 # Implementando uma Entidade
 
-## Identificação
+`Livro` e uma entidade identificada pelo ISBN-13. O construtor remove hifens e espacos, verifica os 13 digitos e valida o digito verificador. A identidade permanece a mesma mesmo se o titulo for alterado.
 
-- Aula: 6.1
-- Tema: Entidade
-- Linguagem: Java
+O metodo `citacaoAbnt()` gera a referencia no formato `SOBRENOME, Nome. Titulo. Editora, ano.`.
 
-## Ideia do exemplo
-
-Usei um chamado de manutenção como entidade. Mesmo que o estado do chamado seja alterado, ele continua sendo o mesmo chamado porque mantém seu código de identificação.
-
-## Estrutura
-
-| Arquivo | Responsabilidade |
-|---|---|
-| `Chamado.java` | Representa o chamado, seu código, descrição e status. |
-| `Main.java` | Cria um chamado, conclui o atendimento e imprime o estado final. |
-
-## O que o código demonstra
-
-- Identidade: o código `CH-001` distingue o chamado;
-- Estado: o chamado começa como `ABERTO`;
-- Comportamento: `concluir()` realiza a mudança de estado;
-- Encapsulamento: o status não é modificado diretamente fora da entidade.
-
-## Resultado esperado
-
-```text
-CH-001 - CONCLUIDO
-```
-
-O exemplo mostra que a identidade permanece a mesma antes e depois da mudança de estado.
+Execute no diretorio `src`: `javac *.java` e `java Main`.

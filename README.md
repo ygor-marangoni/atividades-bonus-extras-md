@@ -61,13 +61,13 @@ As notas abaixo seguem o percentual de atividades concluídas em cada aula: nota
 | Aula 5.1 | ACL, OHS e PL (2) | 0 | Atividade não realizada. | Não realizada | [Link da Atividade](<aula05/Aula 5.1 - Design Estratégico e Mapeamento de Contextos/07 - ACL, OHS e PL (2)/>) |
 | Aula 5.1 | C/S, SW e SK (1) | 0 | Atividade não realizada. | Não realizada | [Link da Atividade](<aula05/Aula 5.1 - Design Estratégico e Mapeamento de Contextos/08 - C-S, SW e SK (1)/>) |
 | Aula 5.1 | C/S, SW e SK (2) | 0 | Atividade não realizada. | Não realizada | [Link da Atividade](<aula05/Aula 5.1 - Design Estratégico e Mapeamento de Contextos/09 - C-S, SW e SK (2)/>) |
-| Aula 6.1 | Value Object | 4 | Atividade concluída integralmente. | 29/07/2026 11:14 | [Link da Atividade](<aula06/Aula 6.1 - Design Tático e Padrões de Modelos de Domínio/01 - Implementando um Value Object/>) |
-| Aula 6.1 | Mais sobre VO (1) | 4 | Atividade concluída parcialmente. | 29/07/2026 11:14 | [Link da Atividade](<aula06/Aula 6.1 - Design Tático e Padrões de Modelos de Domínio/02 - Mais sobre Objetos de Valor (1)/>) |
-| Aula 6.1 | Mais sobre VO (2) | 4 | Atividade concluída parcialmente. | 29/07/2026 11:14 | [Link da Atividade](<aula06/Aula 6.1 - Design Tático e Padrões de Modelos de Domínio/03 - Mais sobre Objetos de Valor (2)/>) |
-| Aula 6.1 | Entidade | 4 | Atividade concluída integralmente. | 29/07/2026 11:14 | [Link da Atividade](<aula06/Aula 6.1 - Design Tático e Padrões de Modelos de Domínio/04 - Implementando uma Entidade/>) |
-| Aula 6.1 | Mais sobre Entidades | 4 | Atividade concluída parcialmente. | 29/07/2026 11:14 | [Link da Atividade](<aula06/Aula 6.1 - Design Tático e Padrões de Modelos de Domínio/05 - Mais sobre Entidades/>) |
-| Aula 6.1 | Agregado | 4 | Atividade concluída integralmente. | 29/07/2026 11:14 | [Link da Atividade](<aula06/Aula 6.1 - Design Tático e Padrões de Modelos de Domínio/06 - Implementando um Agregado/>) |
-| Aula 6.1 | Mais sobre Agregados | 4 | Atividade concluída parcialmente. | 29/07/2026 11:14 | [Link da Atividade](<aula06/Aula 6.1 - Design Tático e Padrões de Modelos de Domínio/07 - Mais sobre Agregados/>) |
+| Aula 6.1 | Value Object | 5 | Atividade concluída integralmente. | 30/07/2026 11:23 | [Link da Atividade](<aula06/Aula 6.1 - Design Tático e Padrões de Modelos de Domínio/01 - Implementando um Value Object/>) |
+| Aula 6.1 | Mais sobre VO (1) | 5 | Atividade concluída integralmente. | 30/07/2026 11:23 | [Link da Atividade](<aula06/Aula 6.1 - Design Tático e Padrões de Modelos de Domínio/02 - Mais sobre Objetos de Valor (1)/>) |
+| Aula 6.1 | Mais sobre VO (2) | 5 | Atividade concluída integralmente. | 30/07/2026 11:23 | [Link da Atividade](<aula06/Aula 6.1 - Design Tático e Padrões de Modelos de Domínio/03 - Mais sobre Objetos de Valor (2)/>) |
+| Aula 6.1 | Entidade | 5 | Atividade concluída integralmente. | 30/07/2026 11:23 | [Link da Atividade](<aula06/Aula 6.1 - Design Tático e Padrões de Modelos de Domínio/04 - Implementando uma Entidade/>) |
+| Aula 6.1 | Mais sobre Entidades | 5 | Atividade concluída integralmente. | 30/07/2026 11:23 | [Link da Atividade](<aula06/Aula 6.1 - Design Tático e Padrões de Modelos de Domínio/05 - Mais sobre Entidades/>) |
+| Aula 6.1 | Agregado | 5 | Atividade concluída integralmente. | 30/07/2026 11:23 | [Link da Atividade](<aula06/Aula 6.1 - Design Tático e Padrões de Modelos de Domínio/06 - Implementando um Agregado/>) |
+| Aula 6.1 | Mais sobre Agregados | 5 | Atividade concluída integralmente. | 30/07/2026 11:23 | [Link da Atividade](<aula06/Aula 6.1 - Design Tático e Padrões de Modelos de Domínio/07 - Mais sobre Agregados/>) |
 | Aula 6.2 | Serviço | 5 | Atividade concluída integralmente. | 07/07/2026 11:55 | [Link da Atividade](<aula06/Aula 6.2 - Design Tático e Padrões de Modelos de Domínio/01 - Implementando um Serviço/>) |
 | Aula 6.2 | Mais sobre Serviços | 5 | Atividade concluída integralmente. | 07/07/2026 11:55 | [Link da Atividade](<aula06/Aula 6.2 - Design Tático e Padrões de Modelos de Domínio/02 - Mais sobre Serviços/>) |
 | Aula 6.2 | Evento | 5 | Atividade concluída integralmente. | 07/07/2026 11:55 | [Link da Atividade](<aula06/Aula 6.2 - Design Tático e Padrões de Modelos de Domínio/03 - Implementando um Evento/>) |
@@ -83,9 +83,9 @@ As notas abaixo seguem o percentual de atividades concluídas em cada aula: nota
 
 As anotações, respostas, diagramas e códigos ficam nos READMEs de cada atividade.
 
-### Aula 6.1 — pendência de material
+### Aula 6.1
 
-As atividades dessa aula não foram anexadas no Teams até o momento da gravação (29/07/2026). Por isso, nas atividades iniciadas por "Mais sobre", não havia enunciado publicado; os registros foram feitos com essa limitação.
+Todas as atividades da aula 6.1 foram refeitas a partir dos enunciados disponibilizados posteriormente.
 
 ## Apresentação em vídeo
 

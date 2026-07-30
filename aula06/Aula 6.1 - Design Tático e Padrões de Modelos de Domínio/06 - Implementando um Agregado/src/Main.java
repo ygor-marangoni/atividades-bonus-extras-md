@@ -1,9 +1,10 @@
-import java.math.BigDecimal;
+import java.util.UUID;
 
 public class Main {
     public static void main(String[] args) {
-        Pedido pedido = new Pedido("PX-42");
-        pedido.adicionarItem("Pizza vegetariana", new BigDecimal("48.00"), 2);
-        System.out.println("Total: R$ " + pedido.total());
+        Voo voo = new Voo(1);
+        Reserva reserva = new Reserva(new Passageiro(UUID.randomUUID(), "Ana Silva"), voo);
+        reserva.confirmar();
+        System.out.println("Reserva confirmada: " + reserva.confirmada());
     }
 }

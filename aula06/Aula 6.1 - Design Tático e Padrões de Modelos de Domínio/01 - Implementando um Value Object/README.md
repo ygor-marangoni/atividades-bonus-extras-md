@@ -1,33 +1,13 @@
 # Implementando um Value Object
 
-## Identificação
+Foram criadas duas versoes imutaveis de CPF: `Cpf`, com a estrutura classica de classes Java, e `CpfRecord`, usando `record`.
 
-- Aula: 6.1
-- Tema: Value Object
-- Linguagem: Java
+Ambas removem a pontuacao recebida e exigem exatamente 11 digitos. A classe tradicional implementa `equals` e `hashCode` por valor; no record isso e gerado automaticamente.
 
-## Ideia do exemplo
+Para executar:
 
-Usei um período de reserva para representar um objeto de valor. Ele é definido pelas datas de entrada e saída; não existe um código próprio que o diferencie. Por isso, dois períodos com as mesmas datas devem ser considerados equivalentes.
-
-## Estrutura
-
-| Arquivo | Responsabilidade |
-|---|---|
-| `PeriodoReserva.java` | Valida as datas e verifica conflito entre dois períodos. |
-| `Main.java` | Cria dois períodos de exemplo e apresenta o resultado. |
-
-## O que o código demonstra
-
-- Imutabilidade: as datas são definidas na criação do objeto;
-- Validação: a saída precisa ser posterior à entrada;
-- Comparação por valor: `equals` e `hashCode` usam as datas;
-- Regra do domínio: dois períodos entram em conflito quando se sobrepõem.
-
-## Resultado esperado
-
-```text
-Conflito: true
+```bash
+cd src
+javac *.java
+java Main
 ```
-
-Os períodos de 4 a 7 de setembro e de 6 a 9 de setembro possuem datas sobrepostas; por isso, o conflito é verdadeiro.
