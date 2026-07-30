@@ -83,12 +83,14 @@ As notas abaixo seguem o percentual de atividades concluídas em cada aula: nota
 
 As anotações, respostas, diagramas e códigos ficam nos READMEs de cada atividade.
 
-### Aula 6.1
-
-Todas as atividades da aula 6.1 foram refeitas a partir dos enunciados disponibilizados posteriormente.
-
 ## Apresentação em vídeo
 
 - Link: [Link da gravação](https://youtu.be/84r8gNh3eMM)
 - Duração: 14:44min
 - Data da gravação: 29/07/2026
+
+## Corrigindo pendências da aula 6.1
+
+- Link: [Link da gravação](https://youtu.be/eZ7EcF4nWds)
+- Duração: 3:56min
+- Data da gravação: 30/07/2026
